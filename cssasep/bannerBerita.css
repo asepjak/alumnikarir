@@ -1,0 +1,50 @@
+.news-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.news-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.news-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+.news-slide img {
+    width: 100%;
+    height: auto;
+}
+.slider-nav {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.slider-nav button {
+    background: #fff;
+    border: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.slider-nav button.active {
+    background: #ff0000;
+}
+
+.berita-acara .news-slider h1 {
+    font-size: 36px;          /* Ukuran font */
+    color: #333;              /* Warna teks */
+    text-align: center;       /* Posisi teks di tengah */
+    font-weight: bold;        /* Tebal huruf */
+    margin-bottom: 20px;      /* Jarak bawah */
+    letter-spacing: 1px;      /* Jarak antar huruf */
+    text-transform: uppercase;/* Huruf kapital semua */
+    text-decoration: underline;
+}
+
+h1{
+    text-align: center;
+}
