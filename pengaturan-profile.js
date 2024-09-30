@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem(`${username}-${role}`, JSON.stringify(profileData));
 
         alert('Profil berhasil disimpan!');
-        window.location.href = 'jobseeker-profile2.html'; // Redirect to dashboard
+        window.location.href = 'jobseeker-profile.html'; // Redirect to dashboard
     });
 });
 
