@@ -15,30 +15,29 @@ document.addEventListener('DOMContentLoaded', function() {
     const userData = JSON.parse(localStorage.getItem(`${username}-${role}`)) || {};
 
     // Display user profile information
-    document.getElementById('profileName').textContent = `Nama: ${userData.name || 'Tidak tersedia'}`;
-    document.getElementById('profileEmail').textContent = `Email: ${userData.email || 'Tidak tersedia'}`;
+    document.getElementById('profileName').textContent = `Nama Lengkap: ${userData.name || 'Tidak tersedia'}`;
+    document.getElementById('profileTanggallahir').textContent = `Tanggal Lahir: ${userData.tanggallahir || 'Tidak tersedia'}`;
+    document.getElementById('profileAlamat').textContent = `Alamat: ${userData.alamat || 'Tidak tersedia'}`;
     document.getElementById('profilePhone').textContent = `Telepon: ${userData.phone || 'Tidak tersedia'}`;
-    document.getElementById('profileNim').textContent = `NIM: ${userData.nim || 'Tidak tersedia'}`;
+    document.getElementById('profileEmail').textContent = `Email: ${userData.email || 'Tidak tersedia'}`;
     document.getElementById('profileStatus').textContent = `Status: ${userData.status || 'Tidak tersedia'}`;
 
     // If the role is 'jobseeker', display additional profile information
     if (role === 'jobseeker') {
-        if (userData.cv) {
-            document.getElementById('profileCv').innerHTML = `CV: <a href="cvs/${userData.cv}" target="_blank">Download CV</a>`;
-        }
+        
         if (userData.photo) {
             const photoDataUrl = localStorage.getItem(`${username}-photo-data`);
-            document.getElementById('profilePhoto').innerHTML = `Foto: <img src="${photoDataUrl}" alt="Foto Profil" style="max-width: 200px; max-height: 200px;">`;
+            document.getElementById('profilePhoto').innerHTML = `<img src="${photoDataUrl}" alt="Foto Profil" style="max-width: 200px; max-height: 200px;">`;
         }
     }
 
     // Handle Edit Profile button click
     document.getElementById('editProfile').addEventListener('click', function() {
-        window.location.href = 'pengaturan-profile.html'; // Redirect to the profile editing page
+        window.location.href = 'pengaturan-profile2.html'; // Redirect to the profile editing page
     });
 
     // Handle Logout button click
-    document.getElementById('logout').addEventListener('click', function() {
+    document.getElementById('log').addEventListener('click', function() {
         localStorage.removeItem('currentUser'); // Clear the current user data
         window.location.href = 'index.html'; // Redirect to the login page or home page
     });
