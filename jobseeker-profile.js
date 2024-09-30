@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Handle Edit Profile button click
     document.getElementById('editProfile').addEventListener('click', function() {
-        window.location.href = 'pengaturan-profile2.html'; // Redirect to the profile editing page
+        window.location.href = 'pengaturan-profile.html'; // Redirect to the profile editing page
     });
 
     // Handle Logout button click
