@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const { username, role } = currentUser;
 
     const fields = {
-        jobseeker: ['name', 'email', 'phone', 'cv', 'photo', 'nim', 'status'],
+        jobseeker: ['photo','name', 'tanggallahir', 'alamat', 'phone', 'email', 'status'],
         company: ['name', 'email']
     };
 
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Populate form with existing user data
     fields[role].forEach(field => {
         if (userData[field]) {
-            if (field === 'cv' || field === 'photo') {
+            if (field === 'photo') {
                 // For file inputs, leave value empty for new uploads
                 document.getElementById(field).value = '';
             } else {
@@ -32,14 +32,10 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
 
         const profileData = fields[role].reduce((data, field) => {
-            if (field === 'cv' || field === 'photo') {
+            if (field === 'photo') {
                 const fileInput = document.getElementById(field);
                 if (fileInput.files.length > 0) {
                     const file = fileInput.files[0];
-                    if (field === 'cv' && file.type !== 'application/pdf') {
-                        alert('Hanya file PDF yang diperbolehkan untuk CV.');
-                        return data;
-                    }
                     if (field === 'photo' && !['image/jpeg', 'image/png'].includes(file.type)) {
                         alert('Hanya file JPG/PNG yang diperbolehkan untuk foto.');
                         return data;
@@ -64,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem(`${username}-${role}`, JSON.stringify(profileData));
 
         alert('Profil berhasil disimpan!');
-        window.location.href = 'jobseeker-profile.html'; // Redirect to dashboard
+        window.location.href = 'jobseeker-profile2.html'; // Redirect to dashboard
     });
 });
 
