@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/css_about.css" />
   <link rel="stylesheet" href="cari_lowongan.css" />
   <link rel="stylesheet" href="cssasep/bannerBerita.css">
+  <link rel="stylesheet" href="cssasep/sidebar.css">
   <!-- <link rel="stylesheet" href="infoloker.css" /> -->
 
 
@@ -34,12 +35,20 @@
         <img src="img/logo.png" alt="Logo Website" />
       </div>
       <div class="nav-links-left">
-        <a href="index.html">Home</a>
-        <a href="job.html">Job</a>
-        <a href="#bagian-about">About</a>
-        <a href="pages/alumni.html">Alumni</a>
+        <a href="index.html">
+          <i class="fas fa-home"> Home</i></a>
+        <a href="job.html">
+          <i class="fas fa-briefcase"> Job</i></a>
+        <a href="#bagian-about">
+          <i class="fas fa-circle-info"> About</i></a>
+        <a href="pages/alumni.html">
+          <i class="fas fa-circle-user"> Alumni</i></a>
      </div>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
     </div>
+    
 
     <div class="right-nav">
       <a href="loginawal.html">Login</a>
@@ -47,6 +56,52 @@
     </div>
   </div>
 
+  <!-- sidebar -->
+  <nav id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+        <img src="img/logo.png" alt="DCareer Logo">
+        <span>DCareer</span>
+    </div>
+    <ul class="sidebar-menu">
+        <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+                <i class="fas fa-tachometer-alt"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
+        <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </li>
+        <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+                <i class="fas fa-search"></i>
+                <span>Job Search</span>
+            </a>
+        </li>
+        <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+                <i class="fas fa-file-alt"></i>
+                <span>Applications</span>
+            </a>
+        </li>
+        <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Tracer Study</span>
+            </a>
+        </li>
+        <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+                <i class="fas fa-cog"></i>
+                <span>Settings</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+  
   <!-- INI BAGIAN BANNER BIRU -->
   <div id="bagian-banner" class="banner">
     <div class="banner-content">
@@ -162,6 +217,7 @@
   <script src="login.js"></script>
   <script src="cari-lowongan.js"> </script>
   <script src="javascript/slider.js"></script>
+  <script src="javascript/sidebar.js"></script>
 </body>
 
 </html>
