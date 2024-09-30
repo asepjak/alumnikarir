@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DCareer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="img/wgo.png">
   <link rel="stylesheet" href="css/css_navbar.css" />
   <link rel="stylesheet" href="css/css_banner.css" />
@@ -16,6 +15,8 @@
   <link rel="stylesheet" href="cari_lowongan.css" />
   <link rel="stylesheet" href="cssasep/bannerBerita.css">
   <link rel="stylesheet" href="cssasep/sidebar.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- <link rel="stylesheet" href="infoloker.css" /> -->
 
 
@@ -33,17 +34,17 @@
   <div class="navbar">
     <div class="left-nav">
       <div class="logo">
-        <img src="img/logo.png" alt="Logo Website" />
+        <img src="img/wgo.png" alt="Logo Website" />
       </div>
       <div class="nav-links-left">
-        <a href="index.html">
+        <a href="/index.html">
           <i class="fas fa-home"> Home</i></a>
-        <a href="job.html">
-          <i class="fas fa-briefcase"> Job</i></a>
+        <!-- <a href="job.html">
+          <i class="fas fa-briefcase"> Job</i></a> -->
         <a href="#bagian-about">
           <i class="fas fa-circle-info"> About</i></a>
-        <a href="pages/alumni.html">
-          <i class="fas fa-circle-user"> Alumni</i></a>
+        <!-- <a href="pages/alumni.html">
+          <i class="fas fa-circle-user"> Alumni</i></a> -->
      </div>
       <div class="menu-toggle">
         <i class="fas fa-bars"></i>
@@ -65,27 +66,21 @@
     </div>
     <ul class="sidebar-menu">
         <li class="sidebar-item">
-            <a href="#" class="sidebar-link">
+            <a href="index.html" class="sidebar-link">
                 <i class="fas fa-tachometer-alt"></i>
                 <span>Dashboard</span>
             </a>
         </li>
         <li class="sidebar-item">
-            <a href="#" class="sidebar-link">
+            <a href="pages/alumni.html" class="sidebar-link">
                 <i class="fas fa-user"></i>
-                <span>Profile</span>
+                <span>Alumni</span>
             </a>
         </li>
         <li class="sidebar-item">
-            <a href="#" class="sidebar-link">
+            <a href="job.html" class="sidebar-link">
                 <i class="fas fa-search"></i>
                 <span>Job Search</span>
-            </a>
-        </li>
-        <li class="sidebar-item">
-            <a href="#" class="sidebar-link">
-                <i class="fas fa-file-alt"></i>
-                <span>Applications</span>
             </a>
         </li>
         <li class="sidebar-item">
@@ -102,16 +97,7 @@
         </li>
     </ul>
 </nav>
-  
-  <!-- INI BAGIAN BANNER BIRU -->
-  <div id="bagian-banner" class="banner">
-    <div class="banner-content">
-      <h1 id="text-banner">Welcome to Our Website DCareer</h1>
-      <p id="sub-title">Online Job Vacancy Information</p>
-      <a href="job.html" class="btn">Find Job</a>
-    </div>
-  </div>
-  
+
 
   <!-- BERITA -->
 
@@ -124,6 +110,15 @@
             </div>
             <div class="news-slide">
                 <img src="images/banner-berita-2.png" alt="berita-acara-2">
+            </div>
+            <div class="news-slide">
+              <div id="bagian-banner" class="banner">
+                <div class="banner-content">
+                  <h1 id="text-banner">Welcome to Our Website DCareer</h1>
+                  <p id="sub-title">Online Job Vacancy Information</p>
+                  <a href="job.html" class="btn">Find Job</a>
+                </div>
+              </div>
             </div>
             <div class="news-slide"></div>
             <!-- Add more slides as needed -->

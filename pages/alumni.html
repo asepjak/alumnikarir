@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DCareer - Alumni Profiles</title>
-    <link rel="icon" href="../img/wgo.png" type="image/png" />
+    <link rel="icon" type="image/png" href="wgo.png">
     <link rel="stylesheet" href="../css/css_navbar.css" />
     <link rel="stylesheet" href="../css/css_login.css" />
     <link rel="stylesheet" href="../css/css_footer.css" />
     <link rel="stylesheet" href="../cssasep/alumni.css" />
     <link rel="stylesheet" href="../cssasep/footer.css">
+    <link rel="stylesheet" href="../cssasep/sidebar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <style>
         html {
@@ -18,25 +19,73 @@
     </style>
 </head>
 <body>
-    <!-- Navbar Section -->
-    <nav class="navbar">
-        <div class="left-nav">
-            <div class="logo">
-                <img src="../img/logo.png" alt="Logo Website" />
-            </div>
-            <div class="nav-links-left">
-                <a href="../index.html">Home</a>
-                <a href="../job.html">Job</a>
-                <a href="../about.html">About</a>
-                <a href="../pages/alumni.html">Alumni</a>
-            </div>
-        </div>
-        <div class="right-nav">
-            <a href="loginawal.html">Login</a>
-            <a href="#bagian-contact">Contact</a>
-        </div>
-    </nav>
+    <!-- INI BAGIAN NAVBAR ATAS -->
+  <div class="navbar">
+    <div class="left-nav">
+      <div class="logo">
+        <img src="wgo.png" alt="Logo Website" />
+      </div>
+      <div class="nav-links-left">
+        <a href="#index.html">
+          <i class="fas fa-home"> Home</i></a>
+        <!-- <a href="job.html">
+          <i class="fas fa-briefcase"> Job</i></a> -->
+        <a href="#bagian-about">
+          <i class="fas fa-circle-info"> About</i></a>
+        <!-- <a href="pages/alumni.html">
+          <i class="fas fa-circle-user"> Alumni</i></a> -->
+     </div>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+    
 
+    <div class="right-nav">
+      <a href="loginawal.html">Login</a>
+      <a href="#bagian-contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- sidebar -->
+  <nav id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+        <img src="logo.png" alt="DCareer Logo">
+        <span>DCareer</span>
+    </div>
+    <ul class="sidebar-menu">
+        <li class="sidebar-item">
+            <a href="/index.html" class="sidebar-link">
+                <i class="fas fa-tachometer-alt"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
+        <li class="sidebar-item">
+            <a href="/pages/alumni.html" class="sidebar-link">
+                <i class="fas fa-user"></i>
+                <span>Alumni</span>
+            </a>
+        </li>
+        <li class="sidebar-item">
+            <a href="/job.html" class="sidebar-link">
+                <i class="fas fa-search"></i>
+                <span>Job Search</span>
+            </a>
+        </li>
+        <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Tracer Study</span>
+            </a>
+        </li>
+        <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+                <i class="fas fa-cog"></i>
+                <span>Settings</span>
+            </a>
+        </li>
+    </ul>
+</nav>
     <!-- Alumni Profiles Section -->
     <main class="alumni-profiles container">
         <h1>Profil Alumni</h1>
@@ -109,5 +158,6 @@
 
     <!-- JavaScript Files -->
     <script src="../javascript/alumni.js"></script>
+    <script src="../javascript/sidebar.js"></script>
 </body>
 </html>
